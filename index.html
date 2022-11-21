@@ -11,20 +11,29 @@
 </head>
 <body>
     <header id="header">
+        
         <h1>Weather Dashboard</h1>
     </header>
+    <!-- search btn aside -->
     <div id="searchSection">
         <label><strong>Search For A City:</strong></label>
         <input type="Search" placeholder="Search" id="searchCity">
         <button type="submit" id="searchBtn">Search</button>
+        <h3 id="cityName"></h3>
         <hr>
     </div>
-    <div id="forecast" class="align-baseline-top border border-dark">
+    <!-- current day forecast the the right  -->
+    <div id="currentForecast" class="align-baseline-top border border-dark">
         <h2 id="currentDate"></h2>
     </div>
-    <div id="currentWeather">
-        <h2>5-Day Forecast:</h2>
-        <h3 id="cityName"></h3>
+    <!-- 5 day weather forecast -->
+    <div>
+        <h2 id="daysForecast">5-Day Forecast:</h2>
+        <div id="fiveDayForecastContainer">
+
+        </div>
+    </div>
+    <!-- <div id="currentWeather">
         <p id="day0Temp"></p>
         <p id="day0Wind"></p>
         <p id="day0Humidity"></p>
@@ -48,7 +57,7 @@
         <p id="day4Temp"></p>
         <p id="day4Wind"></p>
         <p id="day4Humidity"></p>
-    </div>
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script

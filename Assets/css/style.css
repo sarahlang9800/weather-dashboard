@@ -44,16 +44,31 @@ label {
     box-sizing: border-box;
     text-align: center;
     margin: 10px;
-    padding: 7px 74px;
+    padding: 7px 87px;
     border-radius: 2px;
     background-color: rgb(92, 169, 224);
 
 }
 
-#forecast {
-    margin-left: 35%;
-    margin-top: -25%;
+#currentForecast {
+    margin-left: 22%;
+    margin-top: -13%;
     padding-bottom: 15%;
 }
 
+#daysForecast {
+    margin-left: 22%;
+    padding-top: 10px;
+}
 
+#fiveDayForecastContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22%;
+}
+
+.card {
+    width: 12rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
