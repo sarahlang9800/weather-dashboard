@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dasboard</title>
     <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
 </head>
 <body>
-    <div>
-        <label>
-            Search For A City
-        </label>
+    <header id="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div id="searchSection">
+        <label><strong>Search For A City:</strong></label>
         <input type="Search" placeholder="Search" id="searchCity">
-        <button type="submit" id="searchBtn"></button>
+        <button type="submit" id="searchBtn">Search</button>
+        <hr>
+    </div>
+    <div id="forecast" class="align-baseline-top border border-dark">
+        <h2 id="currentDate"></h2>
     </div>
     <div id="currentWeather">
-        <h1 id="currentDate"></h1>
-        <h2 id="cityName"></h2>
-        <p id="todaysTemp"></p>
-        <p id="todaysWind"></p>
-        <p id="todaysHumidity"></p>
+        <h2>5-Day Forecast:</h2>
+        <h3 id="cityName"></h3>
+        <p id="day0Temp"></p>
+        <p id="day0Wind"></p>
+        <p id="day0Humidity"></p>
     </div>
     <div id="day1Weather">
         <p id="day1Temp"></p>
@@ -50,5 +57,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./Assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
