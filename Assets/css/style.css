@@ -71,6 +71,8 @@ label {
     width: 12rem;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color: blue;
-    /* color: white; */
 }
+
+/* div .card {
+    background-color: rgb(23, 23, 75);
+} */
