@@ -6,6 +6,7 @@ var previousSearched = document.getElementById('previousSearched')
 var today = dayjs();
 $('#currentDate').text(today.format('(DD/MM/YYYY)'));
 
+// Left columb section / search area
 var searchBtn = $('#searchBtn')
 searchBtn.on('click', function(event){
     event.preventDefault();
@@ -23,7 +24,6 @@ function renderInput() {
     cityStorage = JSON.parse(localStorage.getItem("searched"));
     if(!cityStorage) { cityStorage = []}
     else { 
-        //for loop to append search history as buttons
         for (var i = 0; i < cityStorage.length; i++) {
             var  cityButton = document.createElement('button')
             cityButton.textContent = cityStorage[i];
@@ -33,7 +33,7 @@ function renderInput() {
     }
 }
 
-
+// right columb area 
 function getLocation(searchInput) {
     var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + searchInput + "&limit=5&appid=" + apiKey;
     fetch(apiUrl).then(function (response) {
@@ -51,6 +51,7 @@ function getLocation(searchInput) {
     })
 
 }
+// 5 day weather forecast
 function getWeather(lat, lon) {
     var apiKey = '1b84b3d807e22917f303632143eabcc6'
     var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey + '&units=imperial';

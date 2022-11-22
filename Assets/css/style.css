@@ -10,8 +10,8 @@ body {
     flex-direction: column;
 }
 
+/* header section */
 #header {
-
     justify-content: center;
     background-color: rgb(44,67,111);
 }
@@ -22,6 +22,7 @@ h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* left columb section */
 #searchSection {
     margin-right: 80%;
     padding-left: 5px;
@@ -31,6 +32,10 @@ label {
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.left-col { 
+    width:20%;
+ }
 
 #searchCity {
     box-sizing: border-box;
@@ -50,17 +55,23 @@ label {
 
 }
 
+/* right columb section */
 #currentForecast {
     margin-left: 22%;
     padding-bottom: 15%;
     margin-top: -46%;
 }
 
+.right-col { 
+    width:80%;
+ }
+
 #daysForecast {
     margin-left: 22%;
     padding-top: 10px;
 }
 
+/* 5 day weather section */
 #fiveDayForecastContainer {
     display: flex;
     justify-content: space-between;
@@ -97,14 +108,4 @@ div .card {
    margin-left: 10px;
    background-color: rgb(237,233,255);
 }
-
-/* @media screen and (max-width: 800px) {
-    #currentForecast {
-        margin-left: 35%;
-        margin-top: -86%;
-    }
-    #daysForecast {
-        margin-left: 35%;
-    }
-    
-} */
+ 
