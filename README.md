@@ -25,10 +25,9 @@ https://sarahlang9800.github.io/weather-dashboard/
 https://github.com/sarahlang9800/weather-dashboard
 
 ## Example Photo 
-![Weather Dashboard Example Picture](/Assets/images/weather-dashboard-exaple-photo.png)
+![Weather Dashboard Example Picture](/Assets/images/weather-forecast-example-photo.png)
 
 ## Discription 
-* Added time blocks for the hours of 9-5, a normal work day.
-* When the page loads the current day is displayed.
-* Dynamically adds color classes for past, present, and future.
-* User input is saved to local storage and persists even when the page is re-loaded. 
+* created a 5 day weather forcast
+* when you search for a city you are presented with the tempurature, wind, anf humidity for the next 5 day
+* All previous cities are saved to local storage 
