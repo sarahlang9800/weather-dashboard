@@ -71,4 +71,6 @@ label {
     width: 12rem;
     flex-wrap: nowrap;
     flex-direction: row;
+    background-color: blue;
+    /* color: white; */
 }
