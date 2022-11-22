@@ -22,7 +22,13 @@ function renderInput() {
     if(!cityStorage) { cityStorage = []}
     else { 
         //for loop to append search history as buttons
-        console.log(cityStorage);
+        for (var i = 0; i < cityStorage.length; i++) {
+            var  cityButton = document.createElement('button')
+            cityButton.textContent.cityStorage[i]
+            var previousSearched = document.getElementById('#previousSearched')
+            cityButton.appendChild(previousSearched)
+        }
+
     }
 }
 

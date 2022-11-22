@@ -13,7 +13,7 @@ body {
     margin: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgb(46, 27, 215);
+    background-color: rgb(44,67,111);
 }
 
 h1 {
@@ -46,7 +46,7 @@ label {
     margin: 10px;
     padding: 7px 87px;
     border-radius: 2px;
-    background-color: rgb(92, 169, 224);
+    background-color: rgb(237,233,255);
 
 }
 
@@ -73,6 +73,7 @@ label {
     flex-direction: row;
 }
 
-/* div .card {
-    background-color: rgb(23, 23, 75);
-} */
+div .card {
+    background-color: rgb(83,107,152);
+    color: white;
+}
