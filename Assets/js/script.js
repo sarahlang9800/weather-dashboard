@@ -2,6 +2,7 @@ var apiKey = '1b84b3d807e22917f303632143eabcc6'
 var searchInput = ''
 var cityName = ''
 var cityStorage = [];
+var previousSearched = document.getElementById('previousSearched')
 var today = dayjs();
 $('#currentDate').text(today.format('(DD/MM/YYYY)'));
 
@@ -16,7 +17,8 @@ searchBtn.on('click', function(event){
 function saveSearchHistory(city) {
     cityStorage.push(city)
     localStorage.setItem("searched", JSON.stringify(cityStorage));
-};
+} 
+
 function renderInput() {
     cityStorage = JSON.parse(localStorage.getItem("searched"));
     if(!cityStorage) { cityStorage = []}
@@ -24,11 +26,10 @@ function renderInput() {
         //for loop to append search history as buttons
         for (var i = 0; i < cityStorage.length; i++) {
             var  cityButton = document.createElement('button')
-            cityButton.textContent.cityStorage[i]
-            var previousSearched = document.getElementById('#previousSearched')
-            cityButton.appendChild(previousSearched)
+            cityButton.textContent = cityStorage[i];
+            previousSearched.appendChild(cityButton)
+            cityButton.classList.add('cityButton')
         }
-
     }
 }
 

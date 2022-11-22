@@ -6,13 +6,13 @@
 
 body {
     margin: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 #header {
-    margin: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+    justify-content: center;
     background-color: rgb(44,67,111);
 }
 
@@ -46,14 +46,14 @@ label {
     margin: 10px;
     padding: 7px 87px;
     border-radius: 2px;
-    background-color: rgb(237,233,255);
+    background-color:  rgb(195, 191, 212);
 
 }
 
 #currentForecast {
     margin-left: 22%;
-    margin-top: -13%;
     padding-bottom: 15%;
+    margin-top: -33%;
 }
 
 #daysForecast {
@@ -69,11 +69,31 @@ label {
 
 .card {
     width: 12rem;
-    flex-wrap: nowrap;
     flex-direction: row;
+    
 }
 
 div .card {
+    flex-wrap: wrap;
     background-color: rgb(83,107,152);
     color: white;
+}
+
+#previousSearched {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2px;
+    padding-top: 10px;
+}
+
+.cityButton {
+   width: 15rem;
+   justify-content: space-around;
+   padding: 8px;
+   margin-top: 15px;
+   margin-left: 10px;
+   background-color: rgb(237,233,255);
 }
